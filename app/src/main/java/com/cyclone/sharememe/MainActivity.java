@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MemeActivity.class);
                 startActivity(intent);
             }
-        },2000);
+        },1500);
 
     }
 }
