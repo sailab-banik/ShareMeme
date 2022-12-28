@@ -13,6 +13,9 @@ public class Meme {
     @SerializedName("url")
     @Expose
     private String url;
+    @SerializedName("subreddit")
+    @Expose
+    private String subreddit;
 
     public String getTitle() {
         return title;
@@ -28,6 +31,14 @@ public class Meme {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getSubreddit() {
+        return subreddit;
+    }
+
+    public void setSubreddit(String subreddit) {
+        this.subreddit = subreddit;
     }
 
     @Override
