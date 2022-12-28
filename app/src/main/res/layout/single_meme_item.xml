@@ -18,17 +18,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/memeCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Wholesomememes"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memeTitle" />
+
     <ImageView
         android:id="@+id/memeImage"
         android:layout_width="0dp"
-        android:layout_height="500dp"
+        android:layout_height="550dp"
         android:layout_margin="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/meme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/memeTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/memeCategory" />
 
     <ImageView
         android:id="@+id/laughButton"
@@ -58,8 +71,7 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_baseline_share_24"
         app:layout_constraintStart_toEndOf="@+id/memeDownload"
-        app:layout_constraintTop_toBottomOf="@+id/memeImage"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/memeImage" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
